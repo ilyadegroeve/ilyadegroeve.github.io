@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set the appropriate image source based on dark mode state
     if (isDarkMode) {
-      logo.src = "C:\\Users\\degro\\Documents\\Site\\index\\images\\main-light.png";
-      themeToggle.src = "C:\\Users\\degro\\Documents\\Site\\index\\images\\darkmode-light.png";
+      logo.src = "images/main-light.png";
+      themeToggle.src = "images/darkmode-light.png";
     } else {
-      logo.src = "C:\\Users\\degro\\Documents\\Site\\index\\images\\main.png";
-      themeToggle.src = "C:\\Users\\degro\\Documents\\Site\\index\\images\\darkmode.png";
+      logo.src = "images/main.png";
+      themeToggle.src = "images/darkmode.png";
     }
   });
 });
