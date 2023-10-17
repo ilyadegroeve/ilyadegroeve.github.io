@@ -1,6 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Set default background color */
+  color: black; /* Set default text color */
+}
+
+body.dark-mode {
+  background-color: black; /* Set background color for dark mode */
+  color: white; /* Set text color for dark mode */
+}
+
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
@@ -8,7 +21,7 @@ header {
 .header-portfolio {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .header-portfolio img {
@@ -16,7 +29,9 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 button {
@@ -45,21 +60,39 @@ p {
 }
 
 footer {
-  padding: 1rem;
+  padding: 20px;
   text-align: center;
+  margin-top: auto;
+  background-color: #f8f9fa; /* Set default background color for the footer */
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode button {
-  border-color: white;
+body.dark-mode footer {
+  background-color: black; /* Set background color for dark mode footer */
+  color: white; /* Set text color for dark mode footer */
 }
 
 #dark-mode-button {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 100px; 
+
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none; /* Remove underlines from anchor tags */
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(0); /* Default to non-inverted colors */
+}
+
+body.dark-mode .social-icons img {
+  filter: invert(1); /* Invert the colors in dark mode */
 }

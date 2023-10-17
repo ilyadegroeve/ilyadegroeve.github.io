@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="C:\\Users\\degro\\Documents\\Site\\index\\style.css">
   <style>
+    /* Your styles from the original code */
     @font-face {
       font-family: "Computer Modern Serif";
       src: url("fonts/cmu.serif-roman.ttf");
@@ -14,6 +15,53 @@
 
     body {
       font-family: "Computer Modern Serif";
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .header-portfolio {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    #logo {
+      height: 65px;
+    }
+
+    section {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 50px; /* Increase the height of the footer */
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
     }
   </style>
 </head>
@@ -21,20 +69,33 @@
 <body>
   <header>
     <div class="header-portfolio">
-      <img src="images/main.png" alt="My Logo" id="logo">
-      <h1>About</h1>
+      <img src="C:\\Users\\degro\\Documents\\Site\\index\\images\\main.png" alt="My Logo" id="logo">
     </div>
-    <img src="images/darkmode.png" alt="Dark Mode" id="dark-mode-button">
+    <img src="C:\\Users\\degro\\Documents\\Site\\index\\images\\darkmode.png" alt="Dark Mode" id="dark-mode-button">
   </header>
 
   <main>
-    <section id="about" style="text-align: center;">
-      <h2>Ilya De Groeve</h2>
+    <h1>Ilya De Groeve</h1>
+    <section id="about">
       <p>This is the default portfolio text. You can edit it later.</p>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in" target="_blank">
+        <img src="C:\\Users\\degro\\Documents\\Site\\index\\images\\logo\\linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="C:\\Users\\degro\\Documents\\Site\\index\\images\\logo\\twitter.png" alt="Twitter">
+      </a>
+      <a href="mailto:your-email@gmail.com">
+        <img src="C:\\Users\\degro\\Documents\\Site\\index\\images\\logo\\gmail.png" alt="Gmail">
+      </a>
+    </div>
+  </footer>
+
+  <script src="C:\\Users\\degro\\Documents\\Site\\index\\script.js"></script>
 </body>
 
 </html>
